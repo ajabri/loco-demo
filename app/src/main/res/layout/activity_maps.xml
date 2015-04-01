@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical"
-        android:background="#C46">
+        android:background="#46B">
 
 
         <LinearLayout
@@ -25,7 +25,7 @@
                 android:fontFamily="sans-serif-thin"
                 android:textStyle="bold"
                 android:textSize="32sp"
-                android:background="@drawable/button_red"
+                android:background="@drawable/button_blue_white"
                 android:layout_gravity="center"
                 android:layout_weight="1"/>
             <Button
@@ -38,7 +38,7 @@
                 android:fontFamily="sans-serif-thin"
                 android:textStyle="bold"
                 android:textSize="32sp"
-                android:background="@drawable/button_red"
+                android:background="@drawable/button_blue_green"
                 android:layout_weight="0.5"
                 android:layout_gravity="center"/>
             <Button
@@ -51,7 +51,7 @@
                 android:fontFamily="sans-serif-thin"
                 android:textStyle="bold"
                 android:textSize="32sp"
-                android:background="@drawable/button_red"
+                android:background="@drawable/button_blue_red"
                 android:layout_weight="1"
                 android:layout_gravity="center"/>
         </LinearLayout>

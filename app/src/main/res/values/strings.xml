@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Flare</string>
+    <string name="app_name">Loco</string>
     <string name="title_activity_maps">Loco</string>
     <string name="hourglass">⌛</string>
     <string name="watch">\u231A</string>
