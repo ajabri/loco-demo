@@ -1,0 +1,150 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#C46">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/circleButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/circle"
+                android:textColor="#fff"
+                android:padding="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:background="@drawable/button_red"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/topButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="#fff"
+                android:padding="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:background="@drawable/button_red"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/stopButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/X"
+                android:textColor="#fff"
+                android:padding="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:background="@drawable/button_red"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            tools:context=".®MapActivity"
+            android:layout_weight="0.7">
+
+            <!--<fragment xmlns:map="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/map"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:scrollbars="vertical"-->
+            <!--class="com.google.android.gms.maps.SupportMapFragment"/>-->
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/map"
+                tools:context=".MapsActivity"
+                android:name="com.google.android.gms.maps.SupportMapFragment"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/hourglass"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="40dp"
+                />
+            <SeekBar
+                android:id="@+id/seekBarFreq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:paddingRight="50dp"
+                android:progress="50"
+                android:max="100"
+                android:thumb="@drawable/thumb"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/watch"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="40dp"
+                />
+            <SeekBar
+                android:id="@+id/seekBarLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:paddingRight="50dp"
+                android:progress="50"
+                android:max="100"
+                android:thumb="@drawable/thumb"/>
+        </LinearLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/pingButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/app_name"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:padding="0dp"-->
+            <!--android:fontFamily="sans-serif-light"-->
+            <!--android:textStyle="bold"-->
+            <!--android:background="@drawable/button_blue_green"-->
+            <!--android:layout_gravity="center"/>-->
+    </LinearLayout>
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111"/>
+</android.support.v4.widget.DrawerLayout>

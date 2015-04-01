@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Flare</string>
+    <string name="title_activity_maps">Loco</string>
+    <string name="hourglass">⌛</string>
+    <string name="watch">\u231A</string>
+    <string name="X">x</string>
+    <string name="circle">o</string>
+    <string-array
+        name="menu">
+        <item>Circles</item>
+        <item>Settings</item>
+        <item>Log Out</item>
+    </string-array>
+</resources>
